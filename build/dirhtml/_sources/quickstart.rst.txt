@@ -1,0 +1,9 @@
+Quickstart
+==========
+
+A quick guide to get STARCH running and to show basic usage.
+
+.. code-block:: bash
+
+   # install, build, or run basic examples here
+   echo "Quickstart placeholder"

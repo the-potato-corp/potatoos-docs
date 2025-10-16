@@ -1,21 +1,13 @@
 STARCH Documentation
 ====================
 
-STARCH is a C-styled language with pipeline operators, flexible syntax, and a dash of Python influence.
+Welcome to the official documentation for the STARCH language! STARCH is a C-styled programming language that powers `PotatoOS <https://example.com/>`_. Its syntax is fairly similar to JavaScript, but contains some nuances.
 
-.. code-block:: starch
-
-   function main(text or "Hello, World!") -> void {
-       text ~> print();
-   }
+If you are new to this documentation, we recommend that you visit the :doc:`Introduction <introduction>` and :doc:`Quickstart <quickstart>` pages.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Documentation
+	:hidden:
+	:maxdepth: 3
 
-   quickstart
-   syntax
-   operators
-   types
-   stdlib
-   examples
+	about/index
+	resources/index
