@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex/"><link rel="search" title="Search" href="../../search/"><link rel="next" title="System requirements" href="../requirements/"><link rel="prev" title="About" href="../">
+<link rel="index" title="Index" href="../../genindex/"><link rel="search" title="Search" href="../../search/"><link rel="next" title="Features" href="../features/"><link rel="prev" title="About PotatoOS" href="../">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
-        <title>Introduction - STARCH documentation</title>
+        <title>Introduction - PotatoOS documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -163,7 +163,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../"><div class="brand">STARCH  documentation</div></a>
+      <a href="../../"><div class="brand">PotatoOS  documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -184,7 +184,7 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../">
   
-  <span class="sidebar-brand-text">STARCH  documentation</span>
+  <span class="sidebar-brand-text">PotatoOS  documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search/" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -193,9 +193,11 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../">About</a><input aria-label="Toggle navigation of About" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../">About PotatoOS</a><input aria-label="Toggle navigation of About PotatoOS" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../requirements/">System requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../features/">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../philosophy/">Philosophy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../architecture/">Architecture</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../getting_started/">Getting started</a><input aria-label="Toggle navigation of Getting started" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
@@ -207,6 +209,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../resources/tutorials/">Tutorials</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../manual/">Manual</a></li>
 </ul>
 
 </div>
@@ -247,34 +250,31 @@
         <article role="main" id="furo-main-content">
           <section id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h1>
-<p>Welcome to the official documentation of the STARCH programming language, which powers PotatoOS.</p>
-<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nf">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p>This page shows information of the language and this documentation, so that you know where to start if you’re a beginner, or where to look if you need some information.</p>
-<section id="before-you-start">
-<h2>Before you start<a class="headerlink" href="#before-you-start" title="Link to this heading">¶</a></h2>
-<p>The <a class="reference internal" href="../../getting_started/"><span class="doc">Getting Started</span></a> and <a class="reference internal" href="../../resources/"><span class="doc">Resources</span></a> pages are a good place to go for tutorials. In case you have trouble with one of the tutorials or your project, you can find help on the <a class="reference external" href="https://discord.gg/no_community_yet">Discord</a> community.</p>
-</section>
-<section id="about-starch">
-<h2>About STARCH<a class="headerlink" href="#about-starch" title="Link to this heading">¶</a></h2>
-<p>STARCH isn’t just a programming language; it’s an ecosystem. Its main purpose is to power PotatoOS, but it can also be used as a standalone language. PotatoOS is completely free and <a class="reference external" href="https://github.com/the-potato-corp/potatoos">open source</a>.</p>
-</section>
-<section id="organisation">
-<h2>Organisation<a class="headerlink" href="#organisation" title="Link to this heading">¶</a></h2>
-<p>This documentation is organised into several different sections:</p>
+<p>Welcome to the official documentation for PotatoOS, a “parasite” Operating System.</p>
+<p>PotatoOS is a novel platform that provides a complete, modern desktop experience within the environment of your existing host operating system (Windows, macOS, Linux, etc.).</p>
+<section id="what-is-a-parasite-os">
+<h2>What is a “Parasite OS”?<a class="headerlink" href="#what-is-a-parasite-os" title="Link to this heading">¶</a></h2>
+<p>Unlike a traditional operating system that runs directly on bare hardware (bare-metal) or within a strictly isolated virtual machine (VM), <strong>PotatoOS</strong> runs as a single, full-screen application built using the <a class="reference external" href="https://godotengine.org">Godot Engine</a>.</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../"><span class="doc">About</span></a> contains this introduction as well as information about STARCH.</p></li>
-<li><p><a class="reference internal" href="../../getting_started/"><span class="doc">Getting Started</span></a> has information about how to use STARCH. It starts with the <a class="reference internal" href="../../getting_started/introduction/"><span class="doc">Introduction</span></a> page, which is a good starting point.</p></li>
-<li><p><a class="reference internal" href="../../manual/"><span class="doc">Manual</span></a> contains in-depth documentation on every class and function.</p></li>
-<li><p><a class="reference internal" href="../../resources/"><span class="doc">Resources</span></a> has tutorials and some programs.</p></li>
+<li><p>Fullscreen Environment: PotatoOS takes over your screen, providing a cohesive desktop, window management, and application framework.</p></li>
+<li><p>Host Integration: It leverages the stability, drivers, and capabilities of your underlying host OS to handle low-level tasks like hardware access and networking.</p></li>
+<li><p>Safety &amp; Simplicity: This architecture allows PotatoOS to be highly portable, easy to install, and reduces the complexity typically associated with low-level OS development.</p></li>
 </ul>
 </section>
-<section id="about-this-documentation">
-<h2>About this documentation<a class="headerlink" href="#about-this-documentation" title="Link to this heading">¶</a></h2>
-<p>This documentation was written by hand by <a class="reference external" href="https://redisnotblue.onrender.com">redisnotblue</a>, but you can contribute to help write, edit, correct and improve it. If you are interested in contributing, check out <span class="xref std std-doc">How to contribute</span>.</p>
+<section id="powered-by-starch">
+<h2>Powered by STARCH<a class="headerlink" href="#powered-by-starch" title="Link to this heading">¶</a></h2>
+<p>The entire PotatoOS ecosystem, including the shell, system utilities, and core applications, is built and driven by the STARCH programming language.</p>
+<p>STARCH is a modern, C-styled scripting language optimized for performance within the Godot runtime. Its primary function is to act as the native programming interface for PotatoOS, providing seamless, high-level access to all system functions (the STARCH System APIs).</p>
+</section>
+<section id="before-you-start">
+<h2>Before you start<a class="headerlink" href="#before-you-start" title="Link to this heading">¶</a></h2>
+<p>This documentation is organized to serve both <strong>users</strong> who want to use PotatoOS, and <strong>developers</strong> who want to build for it.</p>
+<ul class="simple">
+<li><p>Users: We recommend starting with the <strong>Getting Started</strong> section to learn how to install and navigate the system.</p></li>
+<li><p>Developers: Visit the <strong>Developer Guide</strong> to begin learning the STARCH language and interacting with the native PotatoOS System APIs.</p></li>
+</ul>
+<p>In case you have trouble or want to connect with others, you can find help on the official <a class="reference external" href="https://discord.gg/nxCDJM849e">Discord</a> server</p>
+<p>PotatoOS is completely free and <a class="reference external" href="https://github.com/the-potato-corp/potato-os">open-source</a>.</p>
 </section>
 </section>
 
@@ -283,12 +283,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../requirements/">
+          <a class="next-page" href="../features/">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">System requirements</div>
+                <div class="title">Features</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -299,7 +299,7 @@
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">About</div>
+                <div class="title">About PotatoOS</div>
                 
               </div>
             </a>
@@ -334,10 +334,9 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#what-is-a-parasite-os">What is a “Parasite OS”?</a></li>
+<li><a class="reference internal" href="#powered-by-starch">Powered by STARCH</a></li>
 <li><a class="reference internal" href="#before-you-start">Before you start</a></li>
-<li><a class="reference internal" href="#about-starch">About STARCH</a></li>
-<li><a class="reference internal" href="#organisation">Organisation</a></li>
-<li><a class="reference internal" href="#about-this-documentation">About this documentation</a></li>
 </ul>
 </li>
 </ul>

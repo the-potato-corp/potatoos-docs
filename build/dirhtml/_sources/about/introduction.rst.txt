@@ -1,38 +1,34 @@
 Introduction
 ============
 
+Welcome to the official documentation for PotatoOS, a "parasite" Operating System.
 
-Welcome to the official documentation of the STARCH programming language, which powers PotatoOS.
+PotatoOS is a novel platform that provides a complete, modern desktop experience within the environment of your existing host operating system (Windows, macOS, Linux, etc.).
 
-.. code-block:: starch
+What is a "Parasite OS"?
+------------------------
 
-    function main() {
-        print("Hello, World!")
-    }
+Unlike a traditional operating system that runs directly on bare hardware (bare-metal) or within a strictly isolated virtual machine (VM), **PotatoOS** runs as a single, full-screen application built using the `Godot Engine <https://godotengine.org>`_.
 
-This page shows information of the language and this documentation, so that you know where to start if you're a beginner, or where to look if you need some information.
+* Fullscreen Environment: PotatoOS takes over your screen, providing a cohesive desktop, window management, and application framework.
+* Host Integration: It leverages the stability, drivers, and capabilities of your underlying host OS to handle low-level tasks like hardware access and networking.
+* Safety & Simplicity: This architecture allows PotatoOS to be highly portable, easy to install, and reduces the complexity typically associated with low-level OS development.
+
+Powered by STARCH
+-----------------
+
+The entire PotatoOS ecosystem, including the shell, system utilities, and core applications, is built and driven by the STARCH programming language.
+
+STARCH is a modern, C-styled scripting language optimized for performance within the Godot runtime. Its primary function is to act as the native programming interface for PotatoOS, providing seamless, high-level access to all system functions (the STARCH System APIs).
 
 Before you start
 ----------------
 
-The :doc:`Getting Started </getting_started/index>` and :doc:`Resources </resources/index>` pages are a good place to go for tutorials. In case you have trouble with one of the tutorials or your project, you can find help on the `Discord <https://discord.gg/no_community_yet>`_ community.
+This documentation is organized to serve both **users** who want to use PotatoOS, and **developers** who want to build for it.
 
-About STARCH
-------------
+* Users: We recommend starting with the **Getting Started** section to learn how to install and navigate the system.
+* Developers: Visit the **Developer Guide** to begin learning the STARCH language and interacting with the native PotatoOS System APIs.
 
-STARCH isn't just a programming language; it's an ecosystem. Its main purpose is to power PotatoOS, but it can also be used as a standalone language. PotatoOS is completely free and `open source <https://github.com/the-potato-corp/potatoos>`_.
+In case you have trouble or want to connect with others, you can find help on the official `Discord <https://discord.gg/nxCDJM849e>`_ server 
 
-Organisation
-------------
-
-This documentation is organised into several different sections:
-
-* :doc:`About <index>` contains this introduction as well as information about STARCH.
-* :doc:`Getting Started </getting_started/index>` has information about how to use STARCH. It starts with the :doc:`Introduction </getting_started/introduction>` page, which is a good starting point.
-* :doc:`Manual </manual/index>` contains in-depth documentation on every class and function.
-* :doc:`Resources </resources/index>` has tutorials and some programs.
-
-About this documentation
-------------------------
-
-This documentation was written by hand by `redisnotblue <https://redisnotblue.onrender.com>`_, but you can contribute to help write, edit, correct and improve it. If you are interested in contributing, check out :doc:`How to contribute </resources/contributing>`.
+PotatoOS is completely free and `open-source <https://github.com/the-potato-corp/potato-os>`_.

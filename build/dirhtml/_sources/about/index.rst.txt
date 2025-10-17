@@ -1,11 +1,13 @@
-About
-=====
+About PotatoOS
+==============
 
-This category contains information about the STARCH language.
+This category contains information about PotatoOS.
 
 .. toctree::
     :maxdepth: 2
     :glob:
 
     introduction
-    requirements
+    features
+    philosophy
+    architecture

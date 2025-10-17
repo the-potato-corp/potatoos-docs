@@ -1,7 +1,7 @@
 import sys, os
 sys.path.insert(0, os.path.abspath("_ext"))
 
-project = 'STARCH'
+project = 'PotatoOS'
 copyright = '2025, The Potato Corporation'
 author = 'The Potato Corporation'
 
