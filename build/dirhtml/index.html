@@ -174,7 +174,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -196,7 +196,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="about/">About PotatoOS</a><input aria-label="Toggle navigation of About PotatoOS" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="about/introduction/">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="about/features/">Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="about/philosophy/">Philosophy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about/philosophy/">Design Philosophy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="about/architecture/">Architecture</a></li>
 </ul>
 </li>
@@ -209,7 +209,6 @@
 <li class="toctree-l2"><a class="reference internal" href="resources/tutorials/">Tutorials</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="manual/">Manual</a></li>
 </ul>
 
 </div>
@@ -243,17 +242,46 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="starch-documentation">
-<h1>STARCH Documentation<a class="headerlink" href="#starch-documentation" title="Link to this heading">¶</a></h1>
-<p>Welcome to the official documentation for the STARCH language! STARCH is a C-styled programming language that powers <a class="reference external" href="https://example.com/">PotatoOS</a>. Its syntax is fairly similar to JavaScript, but contains some nuances.</p>
-<p>If you are new to this documentation, we recommend that you visit the <a class="reference internal" href="about/introduction/"><span class="doc">Introduction</span></a> and <a class="reference internal" href="getting_started/quickstart/"><span class="doc">Quickstart</span></a> pages.</p>
+          <section id="potatoos-documentation">
+<h1>PotatoOS Documentation<a class="headerlink" href="#potatoos-documentation" title="Link to this heading">¶</a></h1>
+<p>Welcome to the official documentation for <strong>PotatoOS</strong>, a “parasite” Operating System.</p>
+<p>PotatoOS offers a complete, modern computing environment that runs as an application on your existing host system (Windows, macOS, Linux, etc.). It’s built on the Godot Engine and powered entirely by the <strong>STARCH</strong> programming language.</p>
+<section id="start-here">
+<h2>Start Here<a class="headerlink" href="#start-here" title="Link to this heading">¶</a></h2>
+<p>Whether you want to use the operating system or develop applications for it, here are the best places to begin:</p>
+<dl class="simple">
+<dt>Users:</dt><dd><p><strong>Use and configure PotatoOS.</strong> Learn how to install the system, navigate the file structure, and use the built-in Smash shell.</p>
+<ul class="simple">
+<li><p><span class="xref std std-doc">Installation Guide</span></p></li>
+<li><p><span class="xref std std-doc">Basic Navigation</span></p></li>
+<li><p><span class="xref std std-doc">Smash Shell Overview</span></p></li>
+</ul>
+</dd>
+<dt>Developers:</dt><dd><p><strong>Build applications using STARCH.</strong> Dive into the core language syntax and learn how to leverage PotatoOS’s native APIs.</p>
+<ul class="simple">
+<li><p><span class="xref std std-doc">STARCH Language Reference</span></p></li>
+<li><p><span class="xref std std-doc">System Programming (Native APIs)</span></p></li>
+<li><p><span class="xref std std-doc">Your First Program</span></p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="explore-the-system">
+<h2>Explore the System<a class="headerlink" href="#explore-the-system" title="Link to this heading">¶</a></h2>
+<p>Get an overview of the system’s unique design and core components:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="about/introduction/"><span class="doc">Introduction</span></a>: What is a “Parasite OS” and why was it built?</p></li>
+<li><p><a class="reference internal" href="about/features/"><span class="doc">Features</span></a>: The key capabilities and unique advantages of PotatoOS.</p></li>
+<li><p><a class="reference internal" href="about/architecture/"><span class="doc">Architecture</span></a>: A deep dive into the Godot, STARCH, and Potatofs layers.</p></li>
+</ul>
 <div class="toctree-wrapper compound">
 </div>
+</section>
 </section>
 
         </article>
@@ -289,8 +317,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">PotatoOS Documentation</a><ul>
+<li><a class="reference internal" href="#start-here">Start Here</a></li>
+<li><a class="reference internal" href="#explore-the-system">Explore the System</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

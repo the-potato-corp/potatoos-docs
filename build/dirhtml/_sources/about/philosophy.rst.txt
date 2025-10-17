@@ -13,7 +13,8 @@ The entire design of PotatoOS rests on three foundational pillars:
 
 2. **Simplicity through Abstraction**
     We aim to eliminate traditional OS complexity for both the user and the developer.
-    * **For Users:** Installation is reduced to running a single application file, and the file system (Potatofs) is clean, familiar, and fully self-contained.
+    
+    * **For Users:** Installation is reduced to running a single application file, and the file system (PotatoFS) is clean, familiar, and fully self-contained.
     * **For Developers:** We abstract away low-level C and assembly code by making the **STARCH language** the exclusive interface. Developers interact with the system via a consistent set of high-level STARCH System Calls, removing the need to manage complex threads, memory, and hardware protocols.
 
 3. **STARCH-Native Consistency**
