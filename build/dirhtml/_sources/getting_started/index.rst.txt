@@ -1,11 +1,13 @@
 Getting started
 ===============
 
-This section has information on how to learn STARCH, and some tutorials.
+This section has information on how to get started using PotatoOS.
 
 .. toctree::
     :maxdepth: 2
     :glob:
 
     introduction
+    installation
+    usage
     quickstart
