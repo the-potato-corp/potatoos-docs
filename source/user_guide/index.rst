@@ -1,4 +1,4 @@
-User guide
+User Guide
 ==========
 
 This category contains information on how to use PotatoOS.

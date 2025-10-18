@@ -1,2 +1,2 @@
-Built-in apps
+Built-in Apps
 =============

@@ -1,2 +1,2 @@
-Quickstart
-==========
+Your First Program
+==================

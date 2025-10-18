@@ -1,2 +1,2 @@
-Language syntax
+Language Syntax
 ===============

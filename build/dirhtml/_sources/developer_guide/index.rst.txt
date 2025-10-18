@@ -1,4 +1,4 @@
-Developer guide
+Developer Guide
 ===============
 
 This category contains information on how to use STARCH to create programs for PotatoOS.

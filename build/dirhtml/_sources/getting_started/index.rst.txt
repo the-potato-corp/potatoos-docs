@@ -1,4 +1,4 @@
-Getting started
+Getting Started
 ===============
 
 This section has information on how to get started using PotatoOS.

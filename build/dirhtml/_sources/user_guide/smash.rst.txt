@@ -1,2 +1,2 @@
-Smash reference
+Smash Reference
 ===============
