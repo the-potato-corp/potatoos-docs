@@ -11,3 +11,4 @@ This category contains information on how to use STARCH to create programs for P
     syntax
     flow
     core
+    potato_os
