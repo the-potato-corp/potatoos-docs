@@ -14,7 +14,7 @@ Users:
 	**Use and configure PotatoOS.** Learn how to install the system, navigate the file structure, and use the built-in Smash shell.
 
 	* :doc:`Installation Guide <getting_started/installation>`
-	* :doc:`Basic Navigation <getting_started/basic_usage>`
+	* :doc:`Basic Navigation <getting_started/usage>`
 	* :doc:`Smash Shell Overview <user_guide/smash_shell_reference>`
 
 Developers:
@@ -22,7 +22,7 @@ Developers:
 
 	* :doc:`STARCH Language Reference <developer_guide/starch_language_reference>`
 	* :doc:`System Programming (Native APIs) <developer_guide/system_programming>`
-	* :doc:`Your First Program <getting_started/first_program>`
+	* :doc:`Your First Program <getting_started/quickstart>`
 
 Explore the System
 ------------------

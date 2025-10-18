@@ -1,10 +1,13 @@
 Resources
 =========
 
-This category contains resources to learn and access the STARCH language.
+This category contains resources to use PotatoOS
 
 .. toctree::
     :maxdepth: 2
     :glob:
 
     tutorials
+    faq
+    contributing
+    license
