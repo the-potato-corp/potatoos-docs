@@ -1,7 +1,7 @@
 Resources
 =========
 
-This category contains resources to use PotatoOS
+This category contains resources on how to use PotatoOS.
 
 .. toctree::
     :maxdepth: 2
