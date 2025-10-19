@@ -21,5 +21,5 @@ html_css_files = ["highlight.css"]
 
 rst_prolog = """
 .. attention::
-PotatoOS is currently in early alpha and is not available for download. Features and APIs documented here are subject to change.
+    PotatoOS is currently in early alpha and is not available for download. Features and APIs documented here are subject to change.
 """
