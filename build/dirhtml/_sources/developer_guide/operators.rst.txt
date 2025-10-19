@@ -7,6 +7,7 @@ Arithmetic Operators
 STARCH supports the standard arithmetic operators:
 
 .. code-block:: starch
+    
     var sum = 5 + 3;        # Addition
     var diff = 10 - 2;      # Subtraction
     var product = 4 * 7;    # Multiplication
