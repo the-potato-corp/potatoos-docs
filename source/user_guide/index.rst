@@ -7,7 +7,7 @@ This category contains information on how to use PotatoOS.
     :maxdepth: 2
     :glob:
 
-    smash
+    mash
     files
     config
     apps

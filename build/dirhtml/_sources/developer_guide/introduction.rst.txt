@@ -12,12 +12,12 @@ The STARCH Development Workflow
 All development on PotatoOS follows a unified, three-step workflow utilizing the built-in system tools:
 
 1. **Write:** Use the graphical **Text Editor** (or a command-line editor like ``sted``) to create your application source file. All STARCH files use the ``.starch`` extension.
-2. **Execute:** Execute the script directly using the **Smash** shell. The shell automatically invokes the **STARCH Interpreter** to execute your code.
-3. **Debug:** Output, errors, and system warnings are handled by the **console** module and routed to the primary Smash terminal or a system log.
+2. **Execute:** Execute the script directly using the **Mash** shell. The shell automatically invokes the **STARCH Interpreter** to execute your code.
+3. **Debug:** Output, errors, and system warnings are handled by the **console** module and routed to the primary Mash terminal or a system log.
 
-Example Execution from Smash:
+Example Execution from Mash:
 
-.. code-block:: smash
+.. code-block:: mash
 
     /users/alice/myscript.starch arg1 arg2
     /system/app/calculator

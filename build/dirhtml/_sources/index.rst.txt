@@ -11,11 +11,11 @@ Start Here
 Whether you want to use the operating system or develop applications for it, here are the best places to begin:
 
 Users:
-	**Use and configure PotatoOS.** Learn how to install the system, navigate the file structure, and use the built-in Smash shell.
+	**Use and configure PotatoOS.** Learn how to install the system, navigate the file structure, and use the built-in Mash shell.
 
 	* :doc:`Installation Guide <getting_started/installation>`
 	* :doc:`Basic Navigation <getting_started/usage>`
-	* :doc:`Smash Shell Overview <user_guide/smash>`
+	* :doc:`Mash Shell Overview <user_guide/mash>`
 
 Developers:
 	**Build applications using STARCH.** Dive into the core language syntax and learn how to leverage PotatoOS's native APIs.

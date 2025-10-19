@@ -9,7 +9,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx_copybutton",
     "starch_lexer",
-    "smash_lexer"
+    "mash_lexer"
 ]
 
 templates_path = ['_templates']

@@ -20,7 +20,7 @@ Your PotatoOS Journey
 This guide is structured to move you quickly into using the system:
 
 1.  **Installation Guide:** Detailed steps to download and run the PotatoOS application on your host system.
-2.  **Basic Usage & Navigation:** Learn how to exit the application, launch the **Smash Shell**, and navigate the essential **PotatoFS** structure.
+2.  **Basic Usage & Navigation:** Learn how to exit the application, launch the **Mash Shell**, and navigate the essential **PotatoFS** structure.
 3.  **Your First Program:** A quick tutorial to write a simple "Hello, World!" script in the **STARCH** language and execute it from the command line.
 
 Ready to begin? Head over to the :doc:`Installation Guide <installation>`!

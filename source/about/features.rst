@@ -13,14 +13,14 @@ These features stem directly from the **Parasite OS** architecture:
 * **Safety and Isolation:** By executing within the confines of a host application sandbox, PotatoOS cannot directly access or corrupt the host system's kernel or core files, offering an inherent layer of security.
 * **Host System Integration:** PotatoOS safely interacts with the host machine's file system and peripherals, allowing users to access their existing data and hardware from within the PotatoOS environment.
 
-The STARCH & Smash Ecosystem
+The STARCH & Mash Ecosystem
 ----------------------------
 
 These features highlight the core developer and user tools:
 
 * **Native STARCH API:** The STARCH language is tightly integrated, providing a single, high-level programming interface (the STARCH System Calls) that translates complex OS tasks (like I/O and process management) into simple function calls.
 * **Modern Language Design:** STARCH provides a familiar, C-styled syntax that is optimized for lightweight scripting within the OS environment.
-* **The Smash Shell:** A powerful command-line interface intended for power users. It will feature familiar Bash-like syntax while leveraging STARCH scripting for advanced automation and system configuration.
+* **The Mash Shell:** A powerful command-line interface intended for power users. It will feature familiar Bash-like syntax while leveraging STARCH scripting for advanced automation and system configuration.
 * **Integrated Development Environment:** PotatoOS is planned to ship with everything needed to immediately start writing, testing, and running native STARCH applications.
 
 User Experience

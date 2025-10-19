@@ -208,7 +208,6 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../user_guide/">User Guide</a><input aria-label="Toggle navigation of User Guide" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../user_guide/smash/">Smash Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/files/">File System and Permissions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/config/">Customisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/apps/">Built-in Apps</a></li>
@@ -217,6 +216,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../developer_guide/">Developer Guide</a><input aria-label="Toggle navigation of Developer Guide" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../developer_guide/introduction/">Introduction to STARCH</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../developer_guide/syntax/">Language Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer_guide/operators/">Operators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../developer_guide/flow/">Control Flow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../developer_guide/core/">Standard Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../developer_guide/potato_os/">Native APIs</a></li>
@@ -293,7 +293,7 @@
 </dl>
 </li>
 <li><dl class="simple">
-<dt><strong>STARCH-Native Consistency</strong></dt><dd><p>The entire operating system—from the core shell (Smash) to the system utilities—is built using STARCH. This commitment ensures a single, unified codebase and guarantees that any STARCH program benefits from <strong>deep, native integration</strong> with all PotatoOS services and APIs. The language is not a secondary choice; it is the <strong>defining feature</strong> of the development environment.</p>
+<dt><strong>STARCH-Native Consistency</strong></dt><dd><p>The entire operating system—from the core shell (Mash) to the system utilities—is built using STARCH. This commitment ensures a single, unified codebase and guarantees that any STARCH program benefits from <strong>deep, native integration</strong> with all PotatoOS services and APIs. The language is not a secondary choice; it is the <strong>defining feature</strong> of the development environment.</p>
 </dd>
 </dl>
 </li>
@@ -304,7 +304,7 @@
 <p>These philosophies led to specific technical choices:</p>
 <ul class="simple">
 <li><p><strong>The Parasite Model:</strong> Running within a host application (the “Parasite OS” model) provides inherent <strong>sandboxing</strong>. While PotatoOS applications can access files safely via data redirection, they cannot directly compromise the host’s kernel, making the system safer by design.</p></li>
-<li><p><strong>The Smash Shell:</strong> The command-line environment is designed for <strong>familiarity and extension</strong>. It will adopt a largely Bash-compatible syntax to ease migration for power users, while also offering direct execution of STARCH scripts for advanced system configuration and scripting.</p></li>
+<li><p><strong>The Mash Shell:</strong> The command-line environment is designed for <strong>familiarity and extension</strong>. It will adopt a largely Bash-compatible syntax to ease migration for power users, while also offering direct execution of STARCH scripts for advanced system configuration and scripting.</p></li>
 <li><p><strong>The File System:</strong> <strong>Potatofs</strong> (<code class="docutils literal notranslate"><span class="pre">/system</span></code> and <code class="docutils literal notranslate"><span class="pre">/users</span></code>) is intentionally sparse and encapsulated. It avoids the clutter of standard Unix systems (like <code class="docutils literal notranslate"><span class="pre">/dev</span></code> or <code class="docutils literal notranslate"><span class="pre">/proc</span></code>) because the host OS handles those low-level responsibilities, keeping the PotatoOS structure clean and focused on application data and configuration.</p></li>
 </ul>
 </section>

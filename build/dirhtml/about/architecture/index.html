@@ -208,7 +208,6 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../user_guide/">User Guide</a><input aria-label="Toggle navigation of User Guide" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../user_guide/smash/">Smash Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/files/">File System and Permissions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/config/">Customisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/apps/">Built-in Apps</a></li>
@@ -217,6 +216,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../developer_guide/">Developer Guide</a><input aria-label="Toggle navigation of Developer Guide" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../developer_guide/introduction/">Introduction to STARCH</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../developer_guide/syntax/">Language Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer_guide/operators/">Operators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../developer_guide/flow/">Control Flow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../developer_guide/core/">Standard Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../developer_guide/potato_os/">Native APIs</a></li>
@@ -285,7 +285,7 @@ PotatoOS is built and packaged using the Godot Engine. The Godot runtime serves 
 <li><p><strong>STARCH Interpreter &amp; Core System:</strong>
 This layer is the engine of the OS. It includes the STARCH interpreter, the core libraries, the window manager, and the system APIs (System Calls). All PotatoOS logic runs here, executed as STARCH code.</p></li>
 <li><p><strong>User Experience (Top Layer):</strong>
-This includes the <strong>Smash</strong> shell (the primary command-line interface) and all bundled applications. These components are written in STARCH and communicate directly with the underlying STARCH System APIs.</p></li>
+This includes the <strong>Mash</strong> shell (the primary command-line interface) and all bundled applications. These components are written in STARCH and communicate directly with the underlying STARCH System APIs.</p></li>
 </ol>
 </section>
 <section id="file-system-structure-potatofs">
@@ -295,7 +295,7 @@ This includes the <strong>Smash</strong> shell (the primary command-line interfa
 <p><strong>1. /system</strong></p>
 <p>This directory is critical and generally read-only for standard users.</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">/system/bin</span></code>: Core executable STARCH scripts and the main <strong>Smash</strong> shell binary.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/system/bin</span></code>: Core executable STARCH scripts and the main <strong>Mash</strong> shell binary.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">/system/lib</span></code>: Core shared libraries, modules, and the STARCH Standard Library files necessary for execution.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">/system/etc</span></code>: System-wide configuration files (e.g., user profiles, system preferences).</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">/system/app</span></code>: Pre-installed, bundled system applications (e.g., text editor, file browser).</p></li>

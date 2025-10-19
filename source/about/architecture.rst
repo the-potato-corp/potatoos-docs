@@ -18,7 +18,7 @@ The PotatoOS architecture is composed of four distinct layers:
     This layer is the engine of the OS. It includes the STARCH interpreter, the core libraries, the window manager, and the system APIs (System Calls). All PotatoOS logic runs here, executed as STARCH code.
 
 4.  **User Experience (Top Layer):**
-    This includes the **Smash** shell (the primary command-line interface) and all bundled applications. These components are written in STARCH and communicate directly with the underlying STARCH System APIs.
+    This includes the **Mash** shell (the primary command-line interface) and all bundled applications. These components are written in STARCH and communicate directly with the underlying STARCH System APIs.
 
 File System Structure (PotatoFS)
 --------------------------------
@@ -31,7 +31,7 @@ All paths within PotatoOS begin at the virtual root (`/`). There are only two pr
 
 This directory is critical and generally read-only for standard users.
 
-* ``/system/bin``: Core executable STARCH scripts and the main **Smash** shell binary.
+* ``/system/bin``: Core executable STARCH scripts and the main **Mash** shell binary.
 * ``/system/lib``: Core shared libraries, modules, and the STARCH Standard Library files necessary for execution.
 * ``/system/etc``: System-wide configuration files (e.g., user profiles, system preferences).
 * ``/system/app``: Pre-installed, bundled system applications (e.g., text editor, file browser).
