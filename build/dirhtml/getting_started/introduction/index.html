@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex/"><link rel="search" title="Search" href="../../search/"><link rel="next" title="Installation" href="../installation/"><link rel="prev" title="Getting started" href="../">
+<link rel="index" title="Index" href="../../genindex/"><link rel="search" title="Search" href="../../search/"><link rel="next" title="Installation" href="../installation/"><link rel="prev" title="Getting Started" href="../">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
         <title>Introduction - PotatoOS documentation</title>
@@ -174,7 +174,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -200,15 +200,33 @@
 <li class="toctree-l2"><a class="reference internal" href="../../about/architecture/">Architecture</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../">Getting started</a><input aria-label="Toggle navigation of Getting started" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../">Getting Started</a><input aria-label="Toggle navigation of Getting Started" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../installation/">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../usage/">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../quickstart/">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage/">Usage and Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart/">Your First Program</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../resources/">Resources</a><input aria-label="Toggle navigation of Resources" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../user_guide/">User Guide</a><input aria-label="Toggle navigation of User Guide" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/smash/">Smash Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/files/">File System and Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/config/">Customisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/apps/">Built-in Apps</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../developer_guide/">Developer Guide</a><input aria-label="Toggle navigation of Developer Guide" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../developer_guide/introduction/">Introduction to STARCH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer_guide/syntax/">Language Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer_guide/flow/">Control Flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer_guide/core/">Standard Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer_guide/potato_os/">Native APIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../resources/">Resources</a><input aria-label="Toggle navigation of Resources" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../resources/tutorials/">Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/faq/">Frequently Asked Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/contributing/">Contributing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/license/">License</a></li>
 </ul>
 </li>
 </ul>
@@ -244,13 +262,38 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="introduction">
+          <p>..attention:: PotatoOS is currently in early alpha and is not available for download. Features and APIs documented here are subject to change.</p>
+<section id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h1>
+<p>Welcome to the <strong>Getting Started</strong> guide for PotatoOS!</p>
+<p>This section is designed to take you from a curious visitor to a functional user and application developer on the PotatoOS platform. By the end of this guide, you will know how to install PotatoOS, navigate its unique environment, and successfully run your first STARCH application.</p>
+<section id="system-requirements">
+<h2>System Requirements<a class="headerlink" href="#system-requirements" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since PotatoOS is built using the Godot Engine, the resource requirements are low, and portability is high.</p>
+</div>
+<ul class="simple">
+<li><p><strong>Host Operating System:</strong> Any major desktop OS supported by the Godot Engine (Windows, macOS, Linux, or BSD).</p></li>
+<li><p><strong>Storage Space:</strong> A minimum of <strong>50 MB</strong> of free disk space is required for the PotatoOS application and the internal <strong>PotatoFS</strong> (virtual file system) structure.</p></li>
+<li><p><strong>Permissions:</strong> You must have permission to run executable files on your host operating system and write files to the installation directory, but Administrator/root is not required.</p></li>
+</ul>
+</section>
+<section id="your-potatoos-journey">
+<h2>Your PotatoOS Journey<a class="headerlink" href="#your-potatoos-journey" title="Link to this heading">¶</a></h2>
+<p>This guide is structured to move you quickly into using the system:</p>
+<ol class="arabic simple">
+<li><p><strong>Installation Guide:</strong> Detailed steps to download and run the PotatoOS application on your host system.</p></li>
+<li><p><strong>Basic Usage &amp; Navigation:</strong> Learn how to exit the application, launch the <strong>Smash Shell</strong>, and navigate the essential <strong>PotatoFS</strong> structure.</p></li>
+<li><p><strong>Your First Program:</strong> A quick tutorial to write a simple “Hello, World!” script in the <strong>STARCH</strong> language and execute it from the command line.</p></li>
+</ol>
+<p>Ready to begin? Head over to the <a class="reference internal" href="../installation/"><span class="doc">Installation Guide</span></a>!</p>
+</section>
 </section>
 
         </article>
@@ -274,7 +317,7 @@
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Getting started</div>
+                <div class="title">Getting Started</div>
                 
               </div>
             </a>
@@ -296,8 +339,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#system-requirements">System Requirements</a></li>
+<li><a class="reference internal" href="#your-potatoos-journey">Your PotatoOS Journey</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
