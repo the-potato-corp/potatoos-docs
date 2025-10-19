@@ -67,4 +67,4 @@ Every executable STARCH file **must** contain a single top-level function named 
 Next Steps
 ----------
 
-The next page provides a detailed look at the fundamental building blocks of the language: :doc:`Language Syntax & Data Types <language_syntax>`.
+The next page provides a detailed look at the fundamental building blocks of the language: :doc:`Language Syntax <syntax>`.
