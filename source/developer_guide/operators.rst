@@ -33,7 +33,7 @@ In addition to these standard comparison operators, STARCH also supports the app
 
     var approx = (50 ≈ 54); # This is true
 
-For strings, the comparison is case insensitive. For numbers, the answer is true if the numbers are within 10% of each other.
+For strings, the comparison is case insensitive. For numbers, the answer is ``true`` if the numbers are within 10% of each other.
 
 Logical Operators
 -----------------
