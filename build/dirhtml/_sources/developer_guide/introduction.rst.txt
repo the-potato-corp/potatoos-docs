@@ -3,8 +3,6 @@ Introduction to STARCH
 
 Welcome to the **STARCH** development environment. STARCH is the high-level, C-styled programming language that powers all native applications and services within PotatoOS. Its design prioritizes consistency, simplicity, and deep integration with the core operating system kernel.
 
----
-
 The STARCH Development Workflow
 -------------------------------
 
@@ -24,8 +22,6 @@ Example Execution from Smash:
     /users/alice/myscript.starch arg1 arg2
     /system/app/calculator
 
----
-
 Core Concepts: Modularity and I/O
 ---------------------------------
 
@@ -42,8 +38,6 @@ Unlike traditional scripting languages with global I/O functions (like ``print()
     }
 
     main();
-
----
 
 Next Steps
 ----------

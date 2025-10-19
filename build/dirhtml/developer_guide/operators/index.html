@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex/"><link rel="search" title="Search" href="../../search/"><link rel="next" title="Operators" href="../operators/"><link rel="prev" title="Introduction to STARCH" href="../introduction/">
+<link rel="index" title="Index" href="../../genindex/"><link rel="search" title="Search" href="../../search/"><link rel="next" title="Control Flow" href="../flow/"><link rel="prev" title="Language Syntax" href="../syntax/">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
-        <title>Language Syntax - PotatoOS documentation</title>
+        <title>Operators - PotatoOS documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -216,8 +216,8 @@
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../">Developer Guide</a><input aria-label="Toggle navigation of Developer Guide" checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../introduction/">Introduction to STARCH</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Language Syntax</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../operators/">Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../syntax/">Language Syntax</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Operators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../flow/">Control Flow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../core/">Standard Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../potato_os/">Native APIs</a></li>
@@ -250,7 +250,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../../_sources/developer_guide/syntax.rst.txt" title="View this page">
+  <a class="muted-link" href="../../_sources/developer_guide/operators.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -272,64 +272,101 @@
 <p class="admonition-title">Attention</p>
 <p>PotatoOS is currently in early alpha and is not available for download. Features and APIs documented here are subject to change.</p>
 </div>
-<section id="language-syntax">
-<h1>Language Syntax<a class="headerlink" href="#language-syntax" title="Link to this heading">¶</a></h1>
-<p>STARCH is a gradually-typed language, and all statements must end in a semicolon.</p>
-<section id="comments">
-<h2>Comments<a class="headerlink" href="#comments" title="Link to this heading">¶</a></h2>
-<p>Stop code from running by using comments. STARCH has many types of comments:</p>
-<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="c1">// JavaScript-style line comment</span>
-<span class="cm">/* JavaScript-style</span>
-<span class="cm">block comment */</span>
-
-<span class="c1"># Python-style line comment</span>
-<span class="cm">&lt;!-- HTML-style</span>
-<span class="cm">block comment --&gt;</span>
+<section id="operators">
+<h1>Operators<a class="headerlink" href="#operators" title="Link to this heading">¶</a></h1>
+<section id="arithmetic-operators">
+<h2>Arithmetic Operators<a class="headerlink" href="#arithmetic-operators" title="Link to this heading">¶</a></h2>
+<p>STARCH supports the standard arithmetic operators:</p>
+</section>
+<section id="comparison-operators">
+<h2>Comparison Operators<a class="headerlink" href="#comparison-operators" title="Link to this heading">¶</a></h2>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="n">is_equal</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span><span class="p">);</span>      <span class="c1"># Equal to</span>
+<span class="kd">var</span> <span class="n">not_equal</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span> <span class="o">!=</span> <span class="mi">4</span><span class="p">);</span>     <span class="c1"># Not equal to</span>
+<span class="kd">var</span> <span class="n">less</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">);</span>           <span class="c1"># Less than</span>
+<span class="kd">var</span> <span class="n">greater</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">);</span>       <span class="c1"># Greater than</span>
+<span class="kd">var</span> <span class="n">less_eq</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">);</span>       <span class="c1"># Less than or equal</span>
+<span class="kd">var</span> <span class="n">greater_eq</span> <span class="o">=</span> <span class="p">(</span><span class="mi">7</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">);</span>    <span class="c1"># Greater than or equal</span>
+</pre></div>
+</div>
+<p>In addition to these standard comparison operators, STARCH also supports the approximately equal operator.</p>
+<p>..code-block:: starch</p>
+<blockquote>
+<div><p>var approx = (50 ≈ 54); # This is true</p>
+</div></blockquote>
+<p>For strings, the comparison is case insensitive. For numbers, the answer is true if the numbers are within 10% of each other.</p>
+</section>
+<section id="logical-operators">
+<h2>Logical Operators<a class="headerlink" href="#logical-operators" title="Link to this heading">¶</a></h2>
+<p>STARCH has all the traditional boolean operators:</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="n">_and</span> <span class="o">=</span> <span class="kc">true</span> <span class="ow">and</span> <span class="kc">true</span><span class="p">;</span> <span class="c1"># AND</span>
+<span class="kd">var</span> <span class="n">_or</span> <span class="o">=</span> <span class="kc">true</span> <span class="ow">or</span> <span class="kc">false</span>   <span class="c1"># OR</span>
+<span class="kd">var</span> <span class="n">_not</span> <span class="o">=</span> <span class="ow">not</span> <span class="kc">false</span>      <span class="c1"># NOT</span>
 </pre></div>
 </div>
 </section>
-<section id="variable-declaration">
-<h2>Variable Declaration<a class="headerlink" href="#variable-declaration" title="Link to this heading">¶</a></h2>
-<p>Variables in STARCH are created using the <code class="docutils literal notranslate"><span class="pre">var</span></code> or <code class="docutils literal notranslate"><span class="pre">const</span></code> keywords.</p>
-<p><strong>The ``const`` keyword</strong>
-Use <code class="docutils literal notranslate"><span class="pre">const</span></code> to definite immutable variables, which cannot be re-assigned after initialisation.</p>
-<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="c1"># A constant</span>
-<span class="kd">const</span> <span class="no">PI</span><span class="p">:</span><span class="kt"> float</span> <span class="o">=</span> <span class="mf">3.14159</span><span class="p">;</span>
+<section id="pipeline-operator">
+<h2>Pipeline Operator<a class="headerlink" href="#pipeline-operator" title="Link to this heading">¶</a></h2>
+<p>The pipeline operator (<code class="docutils literal notranslate"><span class="pre">~&gt;</span></code>) is STARCH’s signature feature. It passes the result of the left-hand expression as the first argument to the right-hand function:</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="cm">/* Traditional function nesting</span>
+<span class="cm">This IS still supported */</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">process</span><span class="p">(</span><span class="nf">get_data</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)));</span>
 
-<span class="c1"># This will cause an error</span>
-<span class="no">PI</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="c1">// Pipeline style</span>
+<span class="s2">&quot;hello&quot;</span> <span class="ow">~&gt;</span> <span class="nf">get_data</span><span class="p">()</span> <span class="ow">~&gt;</span> <span class="n">process</span> <span class="ow">~&gt;</span> <span class="n">print</span><span class="p">;</span>
 </pre></div>
 </div>
-<p><strong>The ``var`` keyword</strong>
-Use <code class="docutils literal notranslate"><span class="pre">var</span></code> to declare variables that <strong>can</strong> be re-assigned to a different value of the same type later in the scope.</p>
-<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="c1"># A mutable integer</span>
-<span class="kd">var</span> <span class="n">progress</span><span class="p">:</span><span class="kt"> int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="n">progress</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1">// Valid</span>
+<p>This enables fluid, readable data transformation.
+You can also use it with members:</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="n">text</span><span class="p">:</span><span class="kt"> str</span> <span class="o">=</span> <span class="s2">&quot;   Hello world   &quot;</span><span class="p">;</span>
 
-<span class="c1"># This will cause an error</span>
-<span class="n">progress</span> <span class="o">=</span> <span class="s2">&quot;Finished&quot;</span>
-</pre></div>
-</div>
-<p><strong>Type annotation</strong></p>
-<p>Although typing is optional, you may want to assign a type to a variable using a colon (<code class="docutils literal notranslate"><span class="pre">:</span></code>) followed by the type name. This is often reccommended for clearer function signatures.</p>
-<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is specifically a string</span>
-<span class="kd">var</span> <span class="n">text</span><span class="p">:</span><span class="kt"> str</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span><span class="p">;</span>
-<span class="c1"># This works too</span>
-<span class="kd">var</span> <span class="n">other_text</span> <span class="o">=</span> <span class="s2">&quot;How are you?&quot;</span><span class="p">;</span>
+<span class="c1">// Traditional</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">trim</span><span class="p">().</span><span class="nf">upper</span><span class="p">().</span><span class="nf">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;_&quot;</span><span class="p">));</span>
+
+<span class="c1">// Pipeline</span>
+<span class="n">text</span> <span class="ow">~&gt;</span> <span class="p">.</span><span class="nf">trim</span><span class="p">()</span> <span class="ow">~&gt;</span> <span class="p">.</span><span class="nf">upper</span><span class="p">()</span> <span class="ow">~&gt;</span> <span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;_&quot;</span><span class="p">)</span> <span class="ow">~&gt;</span> <span class="nf">print</span><span class="p">();</span>
+<span class="c1">// You can also use tabs for readability</span>
+<span class="n">text</span>
+    <span class="ow">~&gt;</span> <span class="p">.</span><span class="nf">trim</span><span class="p">()</span>
+    <span class="ow">~&gt;</span> <span class="p">.</span><span class="nf">upper</span><span class="p">()</span>
+    <span class="ow">~&gt;</span> <span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;_&quot;</span><span class="p">)</span>
+    <span class="ow">~&gt;</span> <span class="nf">print</span><span class="p">();</span>
 </pre></div>
 </div>
 </section>
-<section id="data-types">
-<h2>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">¶</a></h2>
-<p>STARCH provides seven data types:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">int</span></code>: A 64-bit signed integer. Examples: <code class="docutils literal notranslate"><span class="pre">123</span></code>, <code class="docutils literal notranslate"><span class="pre">-5</span></code>, <code class="docutils literal notranslate"><span class="pre">0xDEADBEEF</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">float</span></code>: A 64-bit IEEE-754 floating-point number. Examples: <code class="docutils literal notranslate"><span class="pre">3.14159</span></code>, <code class="docutils literal notranslate"><span class="pre">2.0</span></code>, <code class="docutils literal notranslate"><span class="pre">1e-6</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">bool</span></code>: A boolean value, either <code class="docutils literal notranslate"><span class="pre">true</span></code> or <code class="docutils literal notranslate"><span class="pre">false</span></code>. Must be written in all lowercase.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">str</span></code>: A sequence of Unicode characters. Examples: <code class="docutils literal notranslate"><span class="pre">&quot;Hello,</span> <span class="pre">World!&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;C:/Users&quot;</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">list</span></code>: An array of untyped objects. Lists are indexed starting at 0. Example: <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">dict</span></code>: An unordered, mutable collection of key-value pairs. Example: <code class="docutils literal notranslate"><span class="pre">{&quot;greeting&quot;:</span> <span class="pre">&quot;hello&quot;}</span></code></p></li>
-</ul>
+<section id="range-operator">
+<h2>Range Operator<a class="headerlink" href="#range-operator" title="Link to this heading">¶</a></h2>
+<p>The range operator (<code class="docutils literal notranslate"><span class="pre">..</span></code>) is used to generate numerical lists.</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="cm">/* Output:</span>
+<span class="cm">1 2 3 4 5 */</span>
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="p">[</span><span class="mf">1.</span><span class="p">.</span><span class="mi">5</span><span class="p">]</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/* Output:</span>
+<span class="cm">2 4 6 8 10 */</span>
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="p">[</span><span class="mf">2.</span><span class="p">.</span><span class="mf">10.</span><span class="p">.</span><span class="mi">2</span><span class="p">]</span> <span class="p">{</span> <span class="c1"># Step of 2</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="concatenation">
+<h2>Concatenation<a class="headerlink" href="#concatenation" title="Link to this heading">¶</a></h2>
+<p>Use <code class="docutils literal notranslate"><span class="pre">~</span></code> to concatenate strings:</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="n">greeting</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span> <span class="o">~</span> <span class="s2">&quot;, &quot;</span> <span class="o">~</span> <span class="s2">&quot;World!&quot;</span><span class="p">;</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">greeting</span><span class="p">);</span>  <span class="c1"># &quot;Hello, World!&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="assignment-operators">
+<h2>Assignment Operators<a class="headerlink" href="#assignment-operators" title="Link to this heading">¶</a></h2>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">x</span> <span class="o">+=</span> <span class="mi">5</span><span class="p">;</span>   <span class="c1"># x = x + 5</span>
+<span class="n">x</span> <span class="o">-=</span> <span class="mi">3</span><span class="p">;</span>   <span class="c1"># x = x - 3</span>
+<span class="n">x</span> <span class="o">*=</span> <span class="mi">2</span><span class="p">;</span>   <span class="c1"># x = x * 2</span>
+<span class="n">x</span> <span class="o">/=</span> <span class="mi">4</span><span class="p">;</span>   <span class="c1"># x = x / 4</span>
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -338,23 +375,23 @@ Use <code class="docutils literal notranslate"><span class="pre">var</span></cod
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../operators/">
+          <a class="next-page" href="../flow/">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Operators</div>
+                <div class="title">Control Flow</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../introduction/">
+          <a class="prev-page" href="../syntax/">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Introduction to STARCH</div>
+                <div class="title">Language Syntax</div>
                 
               </div>
             </a>
@@ -388,10 +425,14 @@ Use <code class="docutils literal notranslate"><span class="pre">var</span></cod
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Language Syntax</a><ul>
-<li><a class="reference internal" href="#comments">Comments</a></li>
-<li><a class="reference internal" href="#variable-declaration">Variable Declaration</a></li>
-<li><a class="reference internal" href="#data-types">Data Types</a></li>
+<li><a class="reference internal" href="#">Operators</a><ul>
+<li><a class="reference internal" href="#arithmetic-operators">Arithmetic Operators</a></li>
+<li><a class="reference internal" href="#comparison-operators">Comparison Operators</a></li>
+<li><a class="reference internal" href="#logical-operators">Logical Operators</a></li>
+<li><a class="reference internal" href="#pipeline-operator">Pipeline Operator</a></li>
+<li><a class="reference internal" href="#range-operator">Range Operator</a></li>
+<li><a class="reference internal" href="#concatenation">Concatenation</a></li>
+<li><a class="reference internal" href="#assignment-operators">Assignment Operators</a></li>
 </ul>
 </li>
 </ul>
