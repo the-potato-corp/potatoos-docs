@@ -20,9 +20,8 @@ All development on PotatoOS follows a unified, three-step workflow utilizing the
 Example Execution from Smash:
 
 .. code-block:: smash
-    
+
     /users/alice/myscript.starch arg1 arg2
-    
     /system/app/calculator
 
 ---
@@ -31,17 +30,6 @@ Core Concepts: Modularity and I/O
 ---------------------------------
 
 Unlike traditional scripting languages with global I/O functions (like ``print()``), STARCH is built on a modular design, even for basic operations. This promotes cleaner code and better separation of concerns, especially for future graphical applications.
-
-### 1. The `console` Module
-
-All standard input and output (I/O) is handled through the built-in ``console`` module. This module serves as the primary interface between your running script and the Smash terminal session.
-
-| Function | Purpose |
-| :--- | :--- |
-| ``console.print()`` | Writes a message to the current output stream (the Smash terminal). |
-| ``console.input()`` | Pauses execution and waits for a line of text input from the user. |
-
-**Example of Basic I/O:**
 
 .. code-block:: starch
     
@@ -53,17 +41,7 @@ All standard input and output (I/O) is handled through the built-in ``console`` 
         console.print("Hello, " + name + ".");
     }
 
-### 2. The `main()` Function
-
-Every executable STARCH file **must** contain a single top-level function named ``main()``. Execution begins immediately inside this function when the interpreter is run.
-
-.. code-block:: starch
-
-    function main() {
-        // Your entire program starts here.
-        // The return value of main() is used as the exit code.
-        return 0; 
-    }
+    main();
 
 ---
 
