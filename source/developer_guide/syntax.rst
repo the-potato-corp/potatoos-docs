@@ -23,7 +23,7 @@ Variable Declaration
 
 Variables in STARCH are created using the ``var`` or ``const`` keywords.
 
-**The ``const`` keyword**
+**The** ``const`` **keyword**
 Use ``const`` to definite immutable variables, which cannot be re-assigned after initialisation.
 
 .. code-block:: starch
@@ -34,7 +34,7 @@ Use ``const`` to definite immutable variables, which cannot be re-assigned after
     # This will cause an error
     PI = 0;
 
-**The ``var`` keyword**
+**The** ``var`` **keyword**
 Use ``var`` to declare variables that **can** be re-assigned to a different value of the same type later in the scope.
 
 .. code-block:: starch
