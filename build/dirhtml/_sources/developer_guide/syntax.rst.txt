@@ -60,7 +60,7 @@ Although typing is optional, you may want to assign a type to a variable using a
 Data Types
 ----------
 
-STARCH provides seven data types:
+STARCH provides eight data types:
 
 * ``int``: A 64-bit signed integer. Examples: ``123``, ``-5``, ``0xDEADBEEF``.
 * ``float``: A 64-bit IEEE-754 floating-point number. Examples: ``3.14159``, ``2.0``, ``1e-6``
@@ -68,3 +68,4 @@ STARCH provides seven data types:
 * ``str``: A sequence of Unicode characters. Examples: ``"Hello, World!"``, ``"C:/Users"``
 * ``list``: An array of untyped objects. Lists are indexed starting at 0. Example: ``[1, 2, 3]``
 * ``dict``: An unordered, mutable collection of key-value pairs. Example: ``{"greeting": "hello"}``
+* ``void``: ``null``. No data.

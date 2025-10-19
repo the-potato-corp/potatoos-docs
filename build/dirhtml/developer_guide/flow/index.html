@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex/"><link rel="search" title="Search" href="../../search/"><link rel="next" title="Standard Library" href="../core/"><link rel="prev" title="Language Syntax" href="../syntax/">
+<link rel="index" title="Index" href="../../genindex/"><link rel="search" title="Search" href="../../search/"><link rel="next" title="Standard Library" href="../core/"><link rel="prev" title="Operators" href="../operators/">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
         <title>Control Flow - PotatoOS documentation</title>
@@ -174,7 +174,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -217,6 +217,7 @@
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../">Developer Guide</a><input aria-label="Toggle navigation of Developer Guide" checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../introduction/">Introduction to STARCH</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../syntax/">Language Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../operators/">Operators</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Control Flow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../core/">Standard Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../potato_os/">Native APIs</a></li>
@@ -262,7 +263,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
@@ -273,6 +274,87 @@
 </div>
 <section id="control-flow">
 <h1>Control Flow<a class="headerlink" href="#control-flow" title="Link to this heading">¶</a></h1>
+<p>All blocks must be wrapped in curly braces (<code class="docutils literal notranslate"><span class="pre">{}</span></code>).</p>
+<section id="if-statements">
+<h2>If Statements<a class="headerlink" href="#if-statements" title="Link to this heading">¶</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">if</span></code> keyword to create an if statement. You can also use brackets. Additionally, you can use <code class="docutils literal notranslate"><span class="pre">elif</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code> to create branches.</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="c1">// This is in Celcius</span>
+
+<span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">30</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;It&#39;s hot!&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">temperature</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;It&#39;s cold!&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Nice temperature!&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="loops">
+<h2>Loops<a class="headerlink" href="#loops" title="Link to this heading">¶</a></h2>
+<p><strong>For Loops</strong></p>
+<p>To create a for loop, use the <code class="docutils literal notranslate"><span class="pre">for</span></code> keyword (Pretty intuitive, huh?). Then use a variable and <code class="docutils literal notranslate"><span class="pre">in</span></code> to iterate over a list. You don’t need brackets.</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="p">[</span><span class="mf">1.</span><span class="p">.</span><span class="mi">3</span><span class="p">]</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>While Loops</strong></p>
+<p>A while loop repeats until a condition is false. Use the <code class="docutils literal notranslate"><span class="pre">while</span></code> keyword and a value to create one.</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="n">condition</span><span class="p">:</span><span class="kt"> bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kd">var</span> <span class="n">counter</span><span class="p">:</span><span class="kt"> int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">while</span> <span class="n">condition</span> <span class="p">{</span>
+    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+
+    <span class="nf">print</span><span class="p">(</span><span class="s2">&quot;Looping!&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">counter</span> <span class="o">&gt;=</span> <span class="mi">10</span> <span class="p">{</span>
+        <span class="n">condition</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="c1"># You can also use break</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<p>To define a function, use <code class="docutils literal notranslate"><span class="pre">function</span></code>. Arguments are in a comma delimited list, and you can supply defaults using <code class="docutils literal notranslate"><span class="pre">or</span></code>:</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nf">main</span><span class="p">(</span><span class="n">text</span><span class="p">:</span><span class="kt"> str</span> <span class="ow">or</span> <span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="kt">void</span> <span class="p">{</span> <span class="c1"># returns null</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">text</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+<p>Classes are created with the <code class="docutils literal notranslate"><span class="pre">class</span></code> keyword. If the function _init is defined, it will be called on instantiation. Create self-references using <code class="docutils literal notranslate"><span class="pre">this</span></code>. Use a colon (<code class="docutils literal notranslate"><span class="pre">:</span></code>) for inheritance.</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="n">Human</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="n">name</span><span class="p">:</span><span class="kt"> str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+
+    <span class="kd">function</span> <span class="nf">_init</span><span class="p">(</span><span class="n">name</span><span class="p">:</span><span class="kt"> str</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="kt">void</span> <span class="p">{</span>
+        <span class="n">this</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="n">john</span><span class="p">:</span><span class="kt"> Human</span> <span class="o">=</span> <span class="nf">Human</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">);</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">john</span><span class="p">.</span><span class="n">name</span><span class="p">);</span> <span class="c1"># John</span>
+
+<span class="kd">class</span> <span class="n">Programmer</span> <span class="p">:</span><span class="kt"> Human</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="n">routine</span><span class="p">:</span><span class="kt"> array</span> <span class="o">=</span> <span class="p">[];</span>
+
+    <span class="kd">function</span> <span class="nf">_init</span><span class="p">(</span><span class="n">name</span><span class="p">:</span><span class="kt"> str</span><span class="p">,</span> <span class="n">routine</span><span class="p">:</span><span class="kt"> array</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="kt">void</span> <span class="p">{</span>
+        <span class="nf">super</span><span class="p">(</span><span class="n">name</span><span class="p">);</span> <span class="c1"># Call _init for the parent class</span>
+        <span class="n">this</span><span class="p">.</span><span class="n">routine</span> <span class="o">=</span> <span class="n">routine</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="n">alice</span><span class="p">:</span><span class="kt"> Programmer</span> <span class="o">=</span> <span class="nf">Programmer</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;code&quot;</span><span class="p">,</span> <span class="s2">&quot;sleep&quot;</span><span class="p">]);</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">alice</span><span class="p">.</span><span class="n">name</span><span class="p">);</span> <span class="c1"># Alice</span>
+</pre></div>
+</div>
+</section>
 </section>
 
         </article>
@@ -289,14 +371,14 @@
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../syntax/">
+          <a class="prev-page" href="../operators/">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Language Syntax</div>
+                <div class="title">Operators</div>
                 
               </div>
             </a>
@@ -318,8 +400,30 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Control Flow</a><ul>
+<li><a class="reference internal" href="#if-statements">If Statements</a></li>
+<li><a class="reference internal" href="#loops">Loops</a></li>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
