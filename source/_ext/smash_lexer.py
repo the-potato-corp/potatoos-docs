@@ -8,4 +8,4 @@ class SmashLexer(BashLexer):
     mimetypes = ["text/x-smash"]
 
 def setup(app):
-	app.add_lexer("Smash", SmashLexer)
+	app.add_lexer("smash", SmashLexer)
