@@ -29,7 +29,7 @@ Comparison Operators
 
 In addition to these standard comparison operators, STARCH also supports the approximately equal operator.
 
-..code-block:: starch
+.. code-block:: starch
 
     var approx = (50 ≈ 54); # This is true
 
