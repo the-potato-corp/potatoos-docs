@@ -8,7 +8,8 @@ author = 'The Potato Corporation'
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx_copybutton",
-    "starch_lexer"
+    "starch_lexer",
+    "smash_lexer"
 ]
 
 templates_path = ['_templates']
