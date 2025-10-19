@@ -20,6 +20,7 @@ All development on PotatoOS follows a unified, three-step workflow utilizing the
 Example Execution from Smash:
 
 .. code-block:: smash
+    
     /users/alice/myscript.starch arg1 arg2
     
     /system/app/calculator
@@ -43,6 +44,7 @@ All standard input and output (I/O) is handled through the built-in ``console`` 
 **Example of Basic I/O:**
 
 .. code-block:: starch
+    
     using console;
     
     function main() {
@@ -56,6 +58,7 @@ All standard input and output (I/O) is handled through the built-in ``console`` 
 Every executable STARCH file **must** contain a single top-level function named ``main()``. Execution begins immediately inside this function when the interpreter is run.
 
 .. code-block:: starch
+
     function main() {
         // Your entire program starts here.
         // The return value of main() is used as the exit code.

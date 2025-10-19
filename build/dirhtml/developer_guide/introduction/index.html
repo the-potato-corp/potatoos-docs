@@ -285,6 +285,11 @@
 <li><p><strong>Debug:</strong> Output, errors, and system warnings are handled by the <strong>console</strong> module and routed to the primary Smash terminal or a system log.</p></li>
 </ol>
 <p>Example Execution from Smash:</p>
+<div class="highlight-smash notranslate"><div class="highlight"><pre><span></span>/users/alice/myscript.starch arg1 arg2
+
+/system/app/calculator
+</pre></div>
+</div>
 <p>—</p>
 </section>
 <section id="core-concepts-modularity-and-i-o">
@@ -299,8 +304,24 @@
 <div class="line"><code class="docutils literal notranslate"><span class="pre">console.input()</span></code> | Pauses execution and waits for a line of text input from the user. |</div>
 </div>
 <p><strong>Example of Basic I/O:</strong></p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kn">using</span> <span class="n">console</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">console</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s2">&quot;Welcome to STARCH!&quot;</span><span class="p">);</span>
+    <span class="n">let</span> <span class="n">name</span> <span class="o">=</span> <span class="n">console</span><span class="p">.</span><span class="nf">input</span><span class="p">(</span><span class="s2">&quot;What is your name? &quot;</span><span class="p">);</span>
+    <span class="n">console</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s2">&quot;Hello, &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 <p>### 2. The <cite>main()</cite> Function</p>
 <p>Every executable STARCH file <strong>must</strong> contain a single top-level function named <code class="docutils literal notranslate"><span class="pre">main()</span></code>. Execution begins immediately inside this function when the interpreter is run.</p>
+<div class="highlight-starch notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Your entire program starts here.</span>
+    <span class="c1">// The return value of main() is used as the exit code.</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 <p>—</p>
 </section>
 <section id="next-steps">
